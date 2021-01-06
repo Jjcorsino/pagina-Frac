@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: #b2e9f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  width: 40%;
+  height: 100%;
+  background-color: black;
+}
+
+.logo-contenedor {
+  height: 80%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+.logo-contenedor img {
+  height: 100%;
+}
+
+.menu {
+  width: 60%;
+  background-color: black;
+}
+
+.menu-contenedor {
+  display: block;
+  height: 80%;
+  width: 90%;
+  text-align: right;
+  margin-top: 6%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Nosotros {
+  height: 80vh;
+  width: 100%;
+}
+
+.nosotros-contenedor {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  margin-top: 5vh;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imagen-nosotros {
+  height: 100%;
+  width: 60%;
+  background-color: #b2e9f7;
+}
+
+.imagen-nosotros img {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-nosotros {
+  height: 100%;
+  width: 40%;
+  background-color: #f7f7f7;
+}
+
+.contenedor-titulo {
+  text-align: center;
+}
+
+.contenedor-titulo h2 {
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-texto {
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+}
+
+.contenedor-texto p {
+  line-height: 28px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Servicios {
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8vh;
+}
+
+.container-text {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.container-text .titular {
+  text-align: center;
+  color: #29323c;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px auto 5vh auto;
+}
+
+.bloque-tarjeta {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 100px;
+}
+
+.bloque-tarjeta .cont-tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  margin: 0 10px 30px 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -6px #777777;
+          box-shadow: 0px 0px 16px -6px #777777;
+  padding-top: 20px;
+}
+
+.tarjeta-header {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 25px 0 12px 0;
+}
+
+.tarjeta-header p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin: -4px auto 0 auto;
+  display: block;
+}
+
+.tarjeta-descripcion {
+  color: #000000;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0px auto;
+  min-height: 80px;
+  display: inline;
+}
+
+.tarjeta-descripcion p {
+  margin: 30px;
+  text-align: justify;
+}
+
+.cont-caracteristicas {
+  text-align: left;
+  width: 80%;
+  margin: 0 0 30px 0;
+}
+
+.cont-caracteristicas ol, ul {
+  list-style: none;
+}
+
+.cont-caracteristicas li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 6px 0;
+}
+
+.cont-caracteristicas li span {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #333333;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  font-weight: 400;
+}
+
+.cont-caracteristicas li span.verde {
+  color: #009EE3;
+}
+
+.cont-caracteristicas li span.rojo {
+  color: #ff0000;
+}
+
+.cont-caracteristicas a {
+  text-align: center;
+}
+
+.cont-caracteristicas .button {
+  display: block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: center;
+  font-size: 14px;
+  background-color: #339900;
+  padding: 14px 20px;
+  border-radius: 4px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Clientes {
+  height: 60vh;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.container-empresas {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  background-color: #37373534;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+}
+
+.container-empreimg {
+  width: 33%;
+}
+
+.container-empreimg img {
+  width: 100%;
+}
+
+.container-empresas-2 {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-empresas-2 .container-empreimg {
+  width: 50%;
+}
+
+.Contacto {
+  height: 50vh;
+  width: 100%;
+  background-color: #7de768;
+}
+/*# sourceMappingURL=main.css.map */
