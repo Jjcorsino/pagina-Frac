@@ -1,5 +1,5 @@
 $colorPrincipal : rgb(178, 233, 247);
-$colorSecundario: rgb(0, 0, 0);
+$colorSecundario: #0f2453;
 $colorTerceario: rgb(125, 231, 104);
 $colorCuatro: rgb(247, 247, 247);
 
@@ -20,7 +20,7 @@ header{
     display: flex;
 }
 .logo{
-    width: 40%;
+    width: 60%;
     height: 100%;
     background-color: $colorSecundario;
 }
@@ -34,7 +34,7 @@ header{
 }
 
 .menu{
-    width: 60%;
+    width: 40%;
     background-color: $colorSecundario;
 }
 .menu-contenedor{
@@ -42,23 +42,25 @@ header{
     height: 80%;
     width: 90%;
     text-align: right;
-    margin-top: 6%;
+    margin-top: 8%;
     justify-content: space-between;
 }
 
 .menu ul{
+    display: flex;
     list-style: none;
+    justify-content: space-between;
 }
 .menu ul li{
-    display: inline;
+    margin: 0 20px;
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color:  #d9c4a6;
 }
 
 .Nosotros{
-    height: 80vh;
+    height: 70vh;
     width: 100%;
   
 }
@@ -86,6 +88,7 @@ a{
 }
 .contenedor-titulo{
     text-align: center;
+    color:  #b38a4c;
 }
 .contenedor-titulo h2{
     font-size: 32px;
@@ -122,7 +125,7 @@ a{
     margin: 20px auto 5vh auto;
 }
 .bloque-tarjeta{
-    width: 90%;
+    width: 80%;
     height: 90%;
     margin: auto;
     display: flex;
@@ -229,10 +232,9 @@ a{
     margin-top: 10vh;
 }
 .container-empresas{
-    width: 60%;
-    height: auto;
+    height: 35vh;
     margin: auto;
-    background-color: #37373534;
+    background-color: $colorCuatro;
     display: flex;
     border-radius: 10px;
 }
@@ -251,6 +253,7 @@ a{
 .container-empresas-2 .container-empreimg{
     width: 50%;
 }
+
 
 //-------------------------------------------------------------------------------------------------------------------//
 

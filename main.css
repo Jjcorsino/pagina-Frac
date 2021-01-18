@@ -18,9 +18,9 @@ header {
 }
 
 .logo {
-  width: 40%;
+  width: 60%;
   height: 100%;
-  background-color: black;
+  background-color: #0f2453;
 }
 
 .logo-contenedor {
@@ -34,8 +34,8 @@ header {
 }
 
 .menu {
-  width: 60%;
-  background-color: black;
+  width: 40%;
+  background-color: #0f2453;
 }
 
 .menu-contenedor {
@@ -43,27 +43,33 @@ header {
   height: 80%;
   width: 90%;
   text-align: right;
-  margin-top: 6%;
+  margin-top: 8%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu ul li {
-  display: inline;
+  margin: 0 20px;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #d9c4a6;
 }
 
 .Nosotros {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -97,6 +103,7 @@ a {
 
 .contenedor-titulo {
   text-align: center;
+  color: #b38a4c;
 }
 
 .contenedor-titulo h2 {
@@ -140,7 +147,7 @@ a {
 }
 
 .bloque-tarjeta {
-  width: 90%;
+  width: 80%;
   height: 90%;
   margin: auto;
   display: -webkit-box;
@@ -288,10 +295,9 @@ a {
 }
 
 .container-empresas {
-  width: 60%;
-  height: auto;
+  height: 35vh;
   margin: auto;
-  background-color: #37373534;
+  background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
