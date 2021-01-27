@@ -13,7 +13,7 @@
                     "Correo: $visitor_email.\n". 
                     "mensaje: $message.";
 
-    $to = "luccas.nqn@hotmail.com";   
+    $to = "ekko.-@hotmail.com";   
 
     $headers = "From: $email_from \r\n";       
     $headers .= "Reply-To: $visitor_email \r\n";
