@@ -11,7 +11,6 @@ html {
 header {
   width: 100%;
   height: 15vh;
-  background-color: #b2e9f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +64,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #d9c4a6;
+  color: #000;
 }
 
 .Nosotros {
@@ -78,7 +77,6 @@ a {
   width: 90%;
   margin: auto;
   margin-top: 5vh;
-  background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +85,6 @@ a {
 .imagen-nosotros {
   height: 100%;
   width: 60%;
-  background-color: #b2e9f7;
 }
 
 .imagen-nosotros img {
@@ -98,12 +95,11 @@ a {
 .texto-nosotros {
   height: 100%;
   width: 40%;
-  background-color: #f7f7f7;
 }
 
 .contenedor-titulo {
   text-align: center;
-  color: #b38a4c;
+  color: #d9c4a6;
 }
 
 .contenedor-titulo h2 {
@@ -140,7 +136,7 @@ a {
 
 .container-text .titular {
   text-align: center;
-  color: #29323c;
+  color: #000;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   margin: 20px auto 5vh auto;
@@ -213,7 +209,7 @@ a {
 }
 
 .tarjeta-descripcion {
-  color: #000000;
+  color: black;
   text-align: center;
   font-size: 17px;
   font-weight: 300;
@@ -225,67 +221,6 @@ a {
 .tarjeta-descripcion p {
   margin: 30px;
   text-align: justify;
-}
-
-.cont-caracteristicas {
-  text-align: left;
-  width: 80%;
-  margin: 0 0 30px 0;
-}
-
-.cont-caracteristicas ol, ul {
-  list-style: none;
-}
-
-.cont-caracteristicas li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #e9e9e9;
-  padding: 6px 0;
-}
-
-.cont-caracteristicas li span {
-  font-size: 14px;
-  line-height: 1.3;
-  color: #333333;
-  vertical-align: middle;
-  display: inline-block;
-  margin: 0;
-  font-weight: 400;
-}
-
-.cont-caracteristicas li span.verde {
-  color: #009EE3;
-}
-
-.cont-caracteristicas li span.rojo {
-  color: #ff0000;
-}
-
-.cont-caracteristicas a {
-  text-align: center;
-}
-
-.cont-caracteristicas .button {
-  display: block;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-align: center;
-  font-size: 14px;
-  background-color: #339900;
-  padding: 14px 20px;
-  border-radius: 4px;
-  line-height: 24px;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: 400;
-  text-transform: uppercase;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .Clientes {
@@ -326,8 +261,60 @@ a {
 }
 
 .Contacto {
-  height: 50vh;
-  width: 100%;
-  background-color: #7de768;
+  height: 70vh;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacto-texto {
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 50%;
+}
+
+.contacto-formulario {
+  height: 100%;
+  width: 50%;
+}
+
+form {
+  margin-top: 50px;
+  -webkit-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rebeccapurple;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.form-control-submit {
+  border: none;
+  outline: none;
+  color: #000;
+  width: 600px;
+  background: #f7f7f7;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid rebeccapurple;
+  letter-spacing: 2px;
+}
+
+.form-control-submit:hover {
+  background: #7de768;
+  cursor: pointer;
+}
+
+input {
+  height: 45px;
 }
 /*# sourceMappingURL=main.css.map */

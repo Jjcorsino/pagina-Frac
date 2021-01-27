@@ -36,9 +36,7 @@
 
     <section class="Nosotros" id="Nosotros">
         <div class="nosotros-contenedor">
-            <div class="imagen-nosotros">
-                <img src="images/GESTION_ECONOMICA_FINANCIERA.jpg">
-            </div>
+            
             <div class="texto-nosotros">
                 <div class="contenedor-titulo">
                     <h2>Quiénes Somos?</h2>
@@ -49,6 +47,9 @@
                     </p>
                     <p>Ayudamos a nuestros clientes a profesionalizar sus PyMEs y captar oportunidades para desarrollar nuevos negocios en la cuenca neuquina, optimizando el financiamiento y logrando mayores retornos económicos.</p>
                     </div>
+            </div>
+            <div class="imagen-nosotros">
+                <img src="images/GESTION_ECONOMICA_FINANCIERA.jpg">
             </div>
         </div>
     </section>
@@ -82,17 +83,7 @@
                     </div>
                   
                 </div>
-                <div class="cont-tarjeta">
-                    <img src="images/employee-performance.png">
-                    <div class="tarjeta-header">
-                        <p>Gestión de RR.HH</p>
-                    </div>
-                    <div class="tarjeta-descripcion">
-                        <p>Nuestros servicios abarcan el reclutamiento, selección, capacitación y desarrollo de los recursos humanos.</p>
-                    </div>
-                    
-                   
-                </div>
+                
 
                 <div class="cont-tarjeta">
                     <img src="images/partnership.png">
@@ -177,7 +168,7 @@
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
-                <li class="glide__slide"><img src="images/Acme.png"></li>
+                <li class="glide__slide"><a href="https://www.acmelubricantes.com.ar/acme-s-r-l/" target="_blank"></a><img src="images/Acme-2.png"></a></li>
                 <li class="glide__slide"><img src="images/Supply.jpg"></li>
                 <li class="glide__slide"><img src="images/NanoTech.png"></li>
                 <li class="glide__slide"><img src="images/Inse.png"></li>
@@ -193,33 +184,29 @@
               </div>
         </div>
     </div>
-<!--
-        <div class="container-empresas">
-            <div class="container-empreimg">
-                <img src="images/Acme.png">
-            </div>
-            <div class="container-empreimg">
-                <img src="images/Supply.jpg">
-            </div>
-            <div class="container-empreimg">
-                <img src="images/nanotech-2.png">
-            </div>
-            
-        </div>
-        <div class="container-empresas-2">
 
-            <div class="container-empreimg">
-                <img src="images/Inse.png">
-            </div>
-            <div class="container-empreimg">
-                <img src="images/Cerro_Negro.jpg">
-            </div>
-           
-        </div>
-    -->
     </section>
     <section class="Contacto" id="Contacto">
+        <div class="contacto-texto">
+            <h3>Contacto</h3>
+            <h4>Email:</h4>
+            <h4>pepeeltieso@hotmail.com</h4>
+            <h4>telefono</h4>
+            <h4>+54 2996543210</h4>
 
+
+        </div>
+        <div class="contacto-formulario">
+            <h2>Contacto rapido</h2>
+            <form id="contact-form" method="post" action="formulario.php">
+                <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Correo Electronico" required>
+                <br>
+                <textarea name="message" class="form-control" placeholder="Mensaje..." row="4" required></textarea><br>
+                <input type="submit" class="form-control-submit" value="Enviar Mensaje">
+            </form>
+        </div>
     </section>
 
 

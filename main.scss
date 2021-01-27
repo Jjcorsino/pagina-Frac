@@ -1,7 +1,9 @@
 $colorPrincipal : rgb(178, 233, 247);
-$colorSecundario: #0f2453;
 $colorTerceario: rgb(125, 231, 104);
 $colorCuatro: rgb(247, 247, 247);
+$colorHeader: rgb(15, 36, 83);
+$letrasTitulos: rgb(217, 196, 166);
+$letrasTextos: rgb(0, 0, 0);
 
 
 body{
@@ -16,13 +18,12 @@ html{
 header{
     width: 100%;
     height: 15vh;
-    background-color: $colorPrincipal;
     display: flex;
 }
 .logo{
     width: 60%;
     height: 100%;
-    background-color: $colorSecundario;
+    background-color: $colorHeader;
 }
 .logo-contenedor{
     height: 80%;
@@ -35,7 +36,7 @@ header{
 
 .menu{
     width: 40%;
-    background-color: $colorSecundario;
+    background-color: $colorHeader;
 }
 .menu-contenedor{
     display: block;
@@ -56,7 +57,7 @@ header{
 }
 a{
     text-decoration: none;
-    color:  #d9c4a6;
+    color:  #000;
 }
 
 .Nosotros{
@@ -69,13 +70,11 @@ a{
     width: 90%;
     margin: auto;
     margin-top: 5vh;
-    background-color: $colorCuatro;
     display: flex;
 }
 .imagen-nosotros{
     height: 100%;
     width: 60%;
-    background-color: $colorPrincipal;
 }
 .imagen-nosotros img{
     width: 100%;
@@ -84,11 +83,10 @@ a{
 .texto-nosotros{
     height: 100%;
     width: 40%;
-    background-color: $colorCuatro;
 }
 .contenedor-titulo{
     text-align: center;
-    color:  #b38a4c;
+    color:  $letrasTitulos;
 }
 .contenedor-titulo h2{
     font-size: 32px;
@@ -119,7 +117,7 @@ a{
 }
 .container-text .titular{
     text-align: center;
-    color: #29323c;
+    color: #000;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin: 20px auto 5vh auto;
@@ -162,7 +160,7 @@ a{
     display: block;
 }
 .tarjeta-descripcion{
-    color: #000000;
+    color: $letrasTextos;
     text-align: center;
     font-size: 17px;
     font-weight: 300;
@@ -177,53 +175,6 @@ a{
 
 
 
-.cont-caracteristicas{
-    text-align: left;
-    width: 80%;
-    margin: 0 0 30px 0;
-}
-.cont-caracteristicas ol,ul{
-    list-style: none;
-}
-.cont-caracteristicas li{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #e9e9e9;
-    padding: 6px 0;
-}
-.cont-caracteristicas li span{
-    font-size: 14px;
-    line-height: 1.3;
-    color: #333333;
-    vertical-align: middle;
-    display: inline-block;
-    margin: 0;
-    font-weight: 400;
-}
-.cont-caracteristicas li span.verde{
-    color: #009EE3;
-}
-.cont-caracteristicas li span.rojo{
-    color: #ff0000;
-}
-.cont-caracteristicas a{
-    text-align: center;
-}
-.cont-caracteristicas .button{
-    display: block;
-    box-shadow: none;
-    text-align: center;
-    font-size: 14px;
-    background-color: #339900;
-    padding: 14px 20px;
-    border-radius: 4px;
-    line-height: 24px;
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: 400;
-    text-transform: uppercase;
-    box-sizing: border-box;
-}
 
 //-------------------------------------------------------------------------------------------------------------------//
 .Clientes{
@@ -258,8 +209,52 @@ a{
 //-------------------------------------------------------------------------------------------------------------------//
 
 .Contacto{
-    height: 50vh;
-    width: 100%;
-    background-color: $colorTerceario;
+    height: 70vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.contacto-texto{
+    background-color: $colorCuatro;
+    height: 100%;
+    width: 50%;
+}
+.contacto-formulario{
+    height: 100%;
+    width: 50%;
+}
 
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rebeccapurple;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.form-control-submit{
+    border: none;
+    outline: none;
+    color: #000;
+    width: 600px;
+    background: $colorCuatro;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid rebeccapurple;
+    letter-spacing: 2px;
+}
+.form-control-submit:hover{
+    background: $colorTerceario;
+    cursor: pointer;
+
+}
+
+input{
+    height: 45px;
 }
