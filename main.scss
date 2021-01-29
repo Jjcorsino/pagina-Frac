@@ -58,16 +58,60 @@ header{
 a{
     text-decoration: none;
     color:  $letrasTitulos;
+    
 }
+
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1.5s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+
+
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae, 
+  close: #ff7f82, 
+  raise: #ffa260, 
+  up: #e4cb58, 
+  slide: #8fc866, 
+  offset: #19bc8b
+);
+@each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+  
+  // Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+  button {  
+    color: var(--color);
+    transition: 0.25s;
+    
+    &:hover,
+    &:focus { 
+      border-color: var(--hover);
+      color: #fff;
+    }
+  }
+
+
 .menu ul li span{
-    color: red;
-    border: 1px solid red;
-    padding: 10px;
-    border-radius: 5px;
+    background: none;
+    border: 2px solid #ffa260;
+    color: #ffa260;
+    font: inherit;
+    padding: 5px;
 }
 .menu ul li span:hover{
-    color: green;
-    border: 1px solid green;
+    color: #ffa260;
+    border: 1px solid #ffa260;
 
 }
 

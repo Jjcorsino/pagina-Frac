@@ -67,16 +67,85 @@ a {
   color: #d9c4a6;
 }
 
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1.5s;
+          animation: pulse 1.5s;
+  -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
 .menu ul li span {
-  color: red;
-  border: 1px solid red;
-  padding: 10px;
-  border-radius: 5px;
+  background: none;
+  border: 2px solid #ffa260;
+  color: #ffa260;
+  font: inherit;
+  padding: 5px;
 }
 
 .menu ul li span:hover {
-  color: green;
-  border: 1px solid green;
+  color: #ffa260;
+  border: 1px solid #ffa260;
 }
 
 .Nosotros {
