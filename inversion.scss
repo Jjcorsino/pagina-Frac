@@ -1,0 +1,169 @@
+
+$colorPrincipal : rgb(178, 233, 247);
+$colorTerceario: rgb(125, 231, 104);
+$colorCuatro: rgb(247, 247, 247);
+$colorHeader: rgb(15, 36, 83);
+$letrasTitulos: rgb(217, 196, 166);
+$letrasTextos: rgb(0, 0, 0);
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+}
+.logo{
+    width: 60%;
+    height: 100%;
+    background-color: $colorHeader;
+}
+.logo-contenedor{
+    height: 80%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.logo-contenedor img{
+    height: 100%;
+}
+
+.menu{
+    width: 40%;
+    background-color: $colorHeader;
+}
+.menu-contenedor{
+    display: block;
+    height: 80%;
+    width: 90%;
+    text-align: right;
+    margin-top: 8%;
+    justify-content: space-between;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.menu ul li{
+    margin: 0 20px;
+}
+a{
+    text-decoration: none;
+    color:  $letrasTitulos;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1.5s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+
+
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae, 
+  close: #ff7f82, 
+  raise: #ffa260, 
+  up: #e4cb58, 
+  slide: #8fc866, 
+  offset: #19bc8b
+);
+@each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+  
+  // Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+  button {  
+    color: var(--color);
+    transition: 0.25s;
+    
+    &:hover,
+    &:focus { 
+      border-color: var(--hover);
+      color: #fff;
+    }
+  }
+
+
+.menu ul li span{
+    background: none;
+    border: 2px solid #ffa260;
+    color: #ffa260;
+    font: inherit;
+    padding: 5px;
+}
+.menu ul li span:hover{
+    color: #ffa260;
+    border: 1px solid #ffa260;
+
+}
+
+
+.banner{
+    height: 40vh;
+    background: url(https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.banner-text{
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 8vh;
+}
+.banner-text h1{
+    font-size: 49px;
+    font-weight: 700;
+}
+.banner-text h2{
+    font-size: 34px;
+    font-weight: 200;
+}
+
+/*-------------------------------------------------------------------------------*/
+.principal{
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+    background-color: green;
+}
+.texto-principal{
+    width: 60%;
+    margin: auto;
+}
+.principal h3, h4{
+    text-align: center;
+    color: $colorHeader;
+}
+.principal p{
+    font-size: 17px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 30px;
+    margin: 0px 0px 22px;
+    padding: 0px;
+    width: 750px;
+}
