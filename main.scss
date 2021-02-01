@@ -68,6 +68,8 @@ a{
 .pulse:focus {
   animation: pulse 1.5s;
   box-shadow: 0 0 0 2em rgba(#fff,0);
+  border-radius: 2px;
+
 }
 
 @keyframes pulse {
@@ -108,6 +110,7 @@ $colors: (
 .menu ul li span{
     background: none;
     border: 2px solid #ffa260;
+    border-radius: 5px;
     color: #ffa260;
     font: inherit;
     padding: 5px;
@@ -115,7 +118,7 @@ $colors: (
 .menu ul li span:hover{
     color: #ffa260;
     border: 1px solid #ffa260;
-
+    border-radius: 5px;
 }
 
 .Nosotros{
@@ -137,6 +140,7 @@ $colors: (
 .imagen-nosotros img{
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 .texto-nosotros{
     height: 100%;
@@ -272,14 +276,59 @@ $colors: (
     margin: auto;
     display: flex;
 }
-.contacto-texto{
-    background-color: $colorCuatro;
-    height: 100%;
-    width: 50%;
+.contact{
+    height: 50vh;
+    display: flex;
 }
+.container-contact{
+    height: 40vh;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.container-contact h4{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+}
+.container-contact .botones{
+    text-align: center;
+}
+.botones a{
+    color: #666;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: 15px 20px 15px 50px;
+    margin: 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+.botones a:hover{
+    color: rgb(102, 51, 153);
+    border: 1px solid rgb(102, 51, 153);
+}
+
+.botones img{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin: -12.5px 0 0 0;
+}
+
+
+
+
 .contacto-formulario{
     height: 100%;
     width: 50%;
+    margin-left: 300px;
 }
 
 form{
@@ -291,7 +340,7 @@ form{
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid rebeccapurple;
+    border-bottom: 1px solid rgb(102, 51, 153);
     color: #000;
     font-size: 18px;
     margin-bottom: 16px;
@@ -304,7 +353,7 @@ form{
     background: $colorCuatro;
     font-size: 18px;
     font-weight: bold;
-    border-bottom: 1px solid rebeccapurple;
+    border-bottom: 1px solid rgb(102, 51, 153);
     letter-spacing: 2px;
 }
 .form-control-submit:hover{
@@ -321,16 +370,174 @@ input{
 
 
 //-------------------------------------------------------------------------------------------------------------------------//
-.banner{
-    height: 60vh;
-    background: url(https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
+@media (min-width: 2560px){
+    .bloque-tarjeta{
+        width: 50%;
+    }
+    .nosotros-contenedor{
+        height: auto;
+    }
+
+    .contenedor-titulo h2{
+        font-size: 52px;
+    }
+    .contenedor-texto p{
+        font-size: 21px;
+    }
+    li a{
+        font-size: 25px;
+    }
+
+    .titular{
+        font-size: 45px;
+    }
+    .tarjeta-descripcion p{
+        font-size: 19px;
+    }
+    .contact{
+        margin: auto;
+    }
 }
-.banner-text{
-    color: white;
-    text-align: center;
-    width: 100%;
+
+
+@media (max-width: 1440px){
+   
+    .menu ul li{
+        margin: auto;
+    }
+    .logo{
+        height: auto;
+        width: 40%;
+    }
+    .menu{
+        width: 60%;
+    }
+    .Nosotros{
+        height: auto;
+    }
+    .texto-nosotros{
+        width: auto;
+    }
+    .imagen-nosotros{
+        width: auto;
+    }
+    .bloque-tarjeta{
+        width: 100%;
+    }
+    .glide__slide{
+        width: auto;
+    }
+    .contacto-formulario{
+        margin: auto;
+    }
+}
+
+
+
+
+@media (max-width: 800px){
+    .menu ul li{
+        margin: auto;
+    }
+
+    li a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .logo{
+        height: auto;
+    }
+    .logo-contenedor {
+        height: 50%;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .menu{
+        width: 80%;
+    }
+    .menu ul{
+        display: flow-root;
+    }
+    .menu ul li span{
+        border: none;
+    }
+    .nosotros-contenedor{
+        display: block;
+    }
+    .contenedor-texto{
+        width: auto;
+    }
+    .bloque-tarjeta{
+        width: 80%;
+    }
+    .glide * img{
+        width: 375px;
+    }
+    .Contacto{
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+    .contacto-formulario{
+        width: auto;
+    }
+    .form-control{
+        width: auto;
+    }
+    .form-control-submit{
+        width: auto;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    .logo-contenedor {
+        height: 50%;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .menu{
+        width: 80%;
+    }
+    .menu ul{
+        display: flow-root;
+    }
+    .menu ul li span{
+        border: none;
+    }
+    .nosotros-contenedor{
+        display: block;
+    }
+    .contenedor-texto{
+        width: auto;
+    }
+    .bloque-tarjeta{
+        width: 80%;
+    }
+    .glide * img{
+        width: 375px;
+    }
+    .Contacto{
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+    .contacto-formulario{
+        width: auto;
+    }
+    .form-control{
+        width: auto;
+    }
+    .form-control-submit{
+        width: auto;
+    }
 }
