@@ -1,8 +1,8 @@
 $colorPrincipal : rgb(178, 233, 247);
 $colorTerceario: rgb(125, 231, 104);
 $colorCuatro: rgb(247, 247, 247);
-$colorHeader: rgb(15, 36, 83);
-$letrasTitulos: rgb(217, 196, 166);
+$colorHeader: rgb(44, 43, 43);
+$letrasTitulos: rgb(227, 50, 76);
 $letrasTextos: rgb(0, 0, 0);
 
 
@@ -26,9 +26,8 @@ header{
     background-color: $colorHeader;
 }
 .logo-contenedor{
-    height: 80%;
+    height: 100%;
     margin-left: 20%;
-    margin-top: 2%;
 }
 .logo-contenedor img{
     height: 100%;
@@ -79,13 +78,13 @@ a{
 
 
 $colors: (
-  fill: #a972cb,
-  pulse: #ef6eae, 
-  close: #ff7f82, 
-  raise: #ffa260, 
-  up: #e4cb58, 
-  slide: #8fc866, 
-  offset: #19bc8b
+  fill: #e3324c,
+  pulse: rgb(227, 50, 76), 
+  close: rgb(227, 50, 76), 
+  raise: rgb(227, 50, 76), 
+  up: rgb(227, 50, 76), 
+  slide: rgb(227, 50, 76), 
+  offset: rgb(227, 50, 76),
 );
 @each $button, $color in $colors {
     .#{$button} {
@@ -94,7 +93,6 @@ $colors: (
     }
   }
   
-  // Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
   button {  
     color: var(--color);
     transition: 0.25s;
@@ -109,15 +107,15 @@ $colors: (
 
 .menu ul li span{
     background: none;
-    border: 2px solid #ffa260;
+    border: 2px solid rgb(227, 50, 76);
     border-radius: 5px;
-    color: #ffa260;
+    color:rgb(227, 50, 76);
     font: inherit;
     padding: 5px;
 }
 .menu ul li span:hover{
-    color: #ffa260;
-    border: 1px solid #ffa260;
+    color: rgb(227, 50, 76);
+    border: 1px solid rgb(227, 50, 76);
     border-radius: 5px;
 }
 
@@ -163,6 +161,7 @@ $colors: (
     line-height: 28px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    color: $colorHeader;
 }
 
 //--------------------------------------------------------------------------------------------------------------------//
@@ -179,10 +178,10 @@ $colors: (
 }
 .container-text .titular{
     text-align: center;
-    color: #000;
-    text-transform: uppercase;
+    color: $letrasTitulos;
     font-family: 'Montserrat', sans-serif;
     margin: 20px auto 5vh auto;
+    font-size: 32px;
 }
 .bloque-tarjeta{
     width: 80%;
@@ -207,6 +206,9 @@ $colors: (
     padding-top: 20px;
     height: 500px;
 }
+.cont-tarjeta img{
+    height: 25%;
+}
 .tarjeta-header{
     width: 100%;
     border-radius: 5px 5px 0px 0px;
@@ -214,6 +216,8 @@ $colors: (
     align-items: start;
     justify-content: start;
     padding: 25px 0 12px 0;
+    color: $colorHeader;
+
 }
 .tarjeta-header p{
     text-align: center;
@@ -221,6 +225,8 @@ $colors: (
     font-weight: 800;
     margin: -4px auto 0 auto;
     display: block;
+    color: $colorHeader;
+
 }
 .tarjeta-descripcion{
     color: $letrasTextos;
@@ -230,9 +236,11 @@ $colors: (
     margin: 0px auto;
     min-height: 80px;
     display: inline;
+    color: $colorHeader;
 }
 .tarjeta-descripcion p{
     margin: 30px;
+    color: $colorHeader;
 }
 
 
@@ -240,12 +248,12 @@ $colors: (
 
 //-------------------------------------------------------------------------------------------------------------------//
 .Clientes{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     margin-top: 10vh;
 }
 .container-empresas{
-    height: 35vh;
+    height: 32vh;
     margin: auto;
     background-color: $colorCuatro;
     display: flex;
@@ -271,46 +279,48 @@ $colors: (
 //-------------------------------------------------------------------------------------------------------------------//
 
 .Contacto{
-    height: 70vh;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    background-color: $colorHeader;
+}
+.contact{
     width: 80%;
     margin: auto;
     display: flex;
 }
-.contact{
-    height: 50vh;
-    display: flex;
-}
 .container-contact{
-    height: 40vh;
     width: 90%;
     margin: auto;
     text-align: center;
+    font-family: Montserrat, sans-serif;;
+
 }
 .container-contact h4{
     display: block;
     text-align: center;
     font-size: 35px;
+    color: #e3324c;
+    font-size: 32px;
+    font-family: Montserrat, sans-serif;;
 }
 .container-contact .botones{
     text-align: center;
 }
 .botones a{
-    color: #666;
+    color: #e3324c;
     text-decoration: none;
     font-size: 15px;
     text-transform: uppercase;
     position: relative;
-    border: 1px solid #666;
+    border: 1px solid #e3324c;
     border-radius: 4px;
     padding: 15px 20px 15px 50px;
     margin: 15px;
     cursor: pointer;
     display: inline-block;
 }
-.botones a:hover{
-    color: rgb(102, 51, 153);
-    border: 1px solid rgb(102, 51, 153);
-}
+
 
 .botones img{
     display: inline-block;

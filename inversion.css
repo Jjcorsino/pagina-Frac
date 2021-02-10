@@ -110,8 +110,8 @@ a {
 }
 
 .raise {
-  --color: #ffa260;
-  --hover: #e5ff60;
+  --color: #e3324c;
+  --hover: #e39d32;
 }
 
 .up {
@@ -142,16 +142,16 @@ button:hover, button:focus {
 
 .menu ul li span {
   background: none;
-  border: 2px solid #ffa260;
+  border: 2px solid #e3324c;
   border-radius: 5px;
-  color: #ffa260;
+  color: #e3324c;
   font: inherit;
   padding: 5px;
 }
 
 .menu ul li span:hover {
-  color: #ffa260;
-  border: 1px solid #ffa260;
+  color: #e3324c;
+  border: 1px solid #e3324c;
   border-radius: 5px;
 }
 

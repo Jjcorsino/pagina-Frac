@@ -82,7 +82,7 @@ $colors: (
   fill: #a972cb,
   pulse: #ef6eae, 
   close: #ff7f82, 
-  raise: #ffa260, 
+  raise: rgb(227, 50, 76), 
   up: #e4cb58, 
   slide: #8fc866, 
   offset: #19bc8b
@@ -109,15 +109,15 @@ $colors: (
 
 .menu ul li span{
     background: none;
-    border: 2px solid #ffa260;
+    border: 2px solid rgb(227, 50, 76);
     border-radius: 5px;
-    color: #ffa260;
+    color: rgb(227, 50, 76);
     font: inherit;
     padding: 5px;
 }
 .menu ul li span:hover{
-    color: #ffa260;
-    border: 1px solid #ffa260;
+    color: rgb(227, 50, 76);
+    border: 1px solid rgb(227, 50, 76);
     border-radius: 5px;
 }
 

@@ -19,13 +19,12 @@ header {
 .logo {
   width: 60%;
   height: 100%;
-  background-color: #0f2453;
+  background-color: #2c2b2b;
 }
 
 .logo-contenedor {
-  height: 80%;
+  height: 100%;
   margin-left: 20%;
-  margin-top: 2%;
 }
 
 .logo-contenedor img {
@@ -34,7 +33,7 @@ header {
 
 .menu {
   width: 40%;
-  background-color: #0f2453;
+  background-color: #2c2b2b;
 }
 
 .menu-contenedor {
@@ -64,7 +63,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #d9c4a6;
+  color: #e3324c;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 1px;
@@ -95,38 +94,38 @@ a {
 }
 
 .fill {
-  --color: #a972cb;
-  --hover: #cb72aa;
+  --color: #e3324c;
+  --hover: #e3324c;
 }
 
 .pulse {
-  --color: #ef6eae;
-  --hover: #ef8f6e;
+  --color: #e3324c;
+  --hover: #e3324c;
 }
 
 .close {
-  --color: #ff7f82;
-  --hover: #ffdc7f;
+  --color: #e3324c;
+  --hover: #e3324c;
 }
 
 .raise {
-  --color: #ffa260;
-  --hover: #e5ff60;
+  --color: #e3324c;
+  --hover: #e3324c;
 }
 
 .up {
-  --color: #e4cb58;
-  --hover: #94e458;
+  --color: #e3324c;
+  --hover: #e3324c;
 }
 
 .slide {
-  --color: #8fc866;
-  --hover: #66c887;
+  --color: #e3324c;
+  --hover: #e3324c;
 }
 
 .offset {
-  --color: #19bc8b;
-  --hover: #1973bc;
+  --color: #e3324c;
+  --hover: #e3324c;
 }
 
 button {
@@ -142,16 +141,16 @@ button:hover, button:focus {
 
 .menu ul li span {
   background: none;
-  border: 2px solid #ffa260;
+  border: 2px solid #e3324c;
   border-radius: 5px;
-  color: #ffa260;
+  color: #e3324c;
   font: inherit;
   padding: 5px;
 }
 
 .menu ul li span:hover {
-  color: #ffa260;
-  border: 1px solid #ffa260;
+  color: #e3324c;
+  border: 1px solid #e3324c;
   border-radius: 5px;
 }
 
@@ -188,7 +187,7 @@ button:hover, button:focus {
 
 .contenedor-titulo {
   text-align: center;
-  color: #d9c4a6;
+  color: #e3324c;
 }
 
 .contenedor-titulo h2 {
@@ -206,6 +205,7 @@ button:hover, button:focus {
   line-height: 28px;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
+  color: #2c2b2b;
 }
 
 .Servicios {
@@ -225,10 +225,10 @@ button:hover, button:focus {
 
 .container-text .titular {
   text-align: center;
-  color: #000;
-  text-transform: uppercase;
+  color: #e3324c;
   font-family: 'Montserrat', sans-serif;
   margin: 20px auto 5vh auto;
+  font-size: 32px;
 }
 
 .bloque-tarjeta {
@@ -275,6 +275,10 @@ button:hover, button:focus {
   height: 500px;
 }
 
+.cont-tarjeta img {
+  height: 25%;
+}
+
 .tarjeta-header {
   width: 100%;
   border-radius: 5px 5px 0px 0px;
@@ -288,6 +292,7 @@ button:hover, button:focus {
       -ms-flex-pack: start;
           justify-content: start;
   padding: 25px 0 12px 0;
+  color: #2c2b2b;
 }
 
 .tarjeta-header p {
@@ -296,6 +301,7 @@ button:hover, button:focus {
   font-weight: 800;
   margin: -4px auto 0 auto;
   display: block;
+  color: #2c2b2b;
 }
 
 .tarjeta-descripcion {
@@ -306,20 +312,22 @@ button:hover, button:focus {
   margin: 0px auto;
   min-height: 80px;
   display: inline;
+  color: #2c2b2b;
 }
 
 .tarjeta-descripcion p {
   margin: 30px;
+  color: #2c2b2b;
 }
 
 .Clientes {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   margin-top: 10vh;
 }
 
 .container-empresas {
-  height: 35vh;
+  height: 32vh;
   margin: auto;
   background-color: #f7f7f7;
   display: -webkit-box;
@@ -350,7 +358,15 @@ button:hover, button:focus {
 }
 
 .Contacto {
-  height: 70vh;
+  height: 40vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2c2b2b;
+}
+
+.contact {
   width: 80%;
   margin: auto;
   display: -webkit-box;
@@ -358,24 +374,20 @@ button:hover, button:focus {
   display: flex;
 }
 
-.contact {
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .container-contact {
-  height: 40vh;
   width: 90%;
   margin: auto;
   text-align: center;
+  font-family: Montserrat, sans-serif;
 }
 
 .container-contact h4 {
   display: block;
   text-align: center;
   font-size: 35px;
+  color: #e3324c;
+  font-size: 32px;
+  font-family: Montserrat, sans-serif;
 }
 
 .container-contact .botones {
@@ -383,22 +395,17 @@ button:hover, button:focus {
 }
 
 .botones a {
-  color: #666;
+  color: #e3324c;
   text-decoration: none;
   font-size: 15px;
   text-transform: uppercase;
   position: relative;
-  border: 1px solid #666;
+  border: 1px solid #e3324c;
   border-radius: 4px;
   padding: 15px 20px 15px 50px;
   margin: 15px;
   cursor: pointer;
   display: inline-block;
-}
-
-.botones a:hover {
-  color: rebeccapurple;
-  border: 1px solid rebeccapurple;
 }
 
 .botones img {
