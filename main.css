@@ -462,6 +462,33 @@ input {
   height: 45px;
 }
 
+@media (min-width: 3840px) {
+  .bloque-tarjeta {
+    width: 50%;
+  }
+  .nosotros-contenedor {
+    height: auto;
+  }
+  .contenedor-titulo h2 {
+    font-size: 52px;
+  }
+  .contenedor-texto p {
+    font-size: 21px;
+  }
+  li a {
+    font-size: 25px;
+  }
+  .titular {
+    font-size: 45px;
+  }
+  .tarjeta-descripcion p {
+    font-size: 19px;
+  }
+  .contact {
+    margin: auto;
+  }
+}
+
 @media (min-width: 2560px) {
   .bloque-tarjeta {
     width: 50%;
