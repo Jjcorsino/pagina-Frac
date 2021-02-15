@@ -365,7 +365,6 @@ button:hover, button:focus {
 .container-empresas {
   height: 32vh;
   margin: auto;
-  background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
