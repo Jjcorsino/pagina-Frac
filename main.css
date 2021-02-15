@@ -129,14 +129,40 @@ a {
   width: 100%;
 }
 
-
+.fill {
+  --color: #e3324c;
+  --hover: #e39d32;
+}
 
 .pulse {
   --color: #e3324c;
   --hover: #e3324c;
 }
 
+.close {
+  --color: #e3324c;
+  --hover: #e39d32;
+}
 
+.raise {
+  --color: #e3324c;
+  --hover: #e39d32;
+}
+
+.up {
+  --color: #e3324c;
+  --hover: #e39d32;
+}
+
+.slide {
+  --color: #e3324c;
+  --hover: #e39d32;
+}
+
+.offset {
+  --color: #e3324c;
+  --hover: #e39d32;
+}
 
 button {
   color: var(--color);
@@ -434,6 +460,9 @@ button:hover, button:focus {
 .container .card .face.face2 .content p {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  color: #2c2b2b;
 }
 
 .container .card .face.face2 .content a {
