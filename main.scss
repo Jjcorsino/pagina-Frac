@@ -289,7 +289,7 @@ $colors: (
 
 .container .card .face{
     width: 300px;
-    height: 200px;
+    height: 250px;
     transition: 0.5s;
 }
 
@@ -321,7 +321,8 @@ $colors: (
 
 .container .card .face.face1 .content img{
     max-width: 100px;
-    margin-left: 10px;
+    display: block;
+    margin: auto;
 }
 
 .container .card .face.face1 .content h3{

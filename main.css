@@ -129,40 +129,14 @@ a {
   width: 100%;
 }
 
-.fill {
-  --color: #e3324c;
-  --hover: #e3324c;
-}
+
 
 .pulse {
   --color: #e3324c;
   --hover: #e3324c;
 }
 
-.close {
-  --color: #e3324c;
-  --hover: #e3324c;
-}
 
-.raise {
-  --color: #e3324c;
-  --hover: #e3324c;
-}
-
-.up {
-  --color: #e3324c;
-  --hover: #e3324c;
-}
-
-.slide {
-  --color: #e3324c;
-  --hover: #e3324c;
-}
-
-.offset {
-  --color: #e3324c;
-  --hover: #e3324c;
-}
 
 button {
   color: var(--color);
@@ -376,7 +350,7 @@ button:hover, button:focus {
 
 .container .card .face {
   width: 300px;
-  height: 200px;
+  height: 250px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -419,7 +393,8 @@ button:hover, button:focus {
 
 .container .card .face.face1 .content img {
   max-width: 100px;
-  margin-left: 10px;
+  display: block;
+  margin: auto;
 }
 
 .container .card .face.face1 .content h3 {
