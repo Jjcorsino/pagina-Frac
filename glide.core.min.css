@@ -4,7 +4,8 @@
     height: 30vh;
 }
 .glide * img{
-    width: 500px;
+    width: 350px;
+    object-fit: contain;
 }
 
 .glide__track{overflow:hidden}

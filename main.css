@@ -771,6 +771,7 @@ input {
   }
   .glide * img {
     width: 375px;
+    object-fit: contain;
   }
   .Contacto {
     display: block;
@@ -837,8 +838,7 @@ input {
     width: 100%;
   }
   .Contacto {
-    height: 55vh;
-    display: block;
+    height: auto;
   }
 }
 
