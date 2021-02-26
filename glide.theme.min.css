@@ -43,5 +43,7 @@
 
         .glide * img{
             width: 375px;
+            object-fit: contain;
+
         }
     }
