@@ -131,12 +131,12 @@ a {
 
 .fill {
   --color: #e3324c;
-  --hover: #e3324c;
+  --hover: #e39d32;
 }
 
 .pulse {
   --color: #e3324c;
-  --hover: #e3324c;
+  --hover: #e39d32;
 }
 
 .close {
@@ -755,6 +755,7 @@ input {
   }
   header {
     height: 20vh;
+    width: 109%;
   }
   .menu ul {
     display: flow-root;
@@ -810,6 +811,39 @@ input {
   .logo-contenedor {
     height: 82%;
   }
+  .menu-contenedor {
+    margin-top: 8% !important;
+  }
+  .Nosotros {
+    margin-left: 3vh;
+  }
+  .container {
+    width: 70% !important;
+  }
+  .Contacto {
+    width: 109%;
+  }
+  .container-text {
+    margin-left: 3vh;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  .container {
+    width: 70% !important;
+  }
+  .menu-contenedor {
+    margin-top: 8% !important;
+  }
+  .Contacto {
+    width: 109%;
+  }
+  .container-text {
+    margin-left: 3vh;
+  }
+  .Nosotros {
+    margin-left: 3vh;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -830,6 +864,15 @@ input {
   }
 }
 
+@media only screen and (min-device-width: 411px) and (max-device-width: 731px) {
+  .menu-contenedor {
+    margin-top: 8% !important;
+  }
+  .container {
+    width: 70% !important;
+  }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
   .bloque-tarjeta {
     width: 100%;
@@ -842,6 +885,21 @@ input {
     width: 300px !important;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .menu-contenedor {
+    margin-top: 8% !important;
+  }
+  .nosotros-contenedor {
+    margin-left: 5vh;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .Servicios {
+    margin-left: 5vh !important;
+  }
+  .Contacto {
+    width: 109%;
   }
 }
 
@@ -943,6 +1001,31 @@ input {
   }
   .container {
     width: 60%;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .container {
+    width: 70% !important;
+  }
+  .Nosotros {
+    margin-left: 3vh;
+  }
+  .Contacto {
+    width: 109%;
+  }
+  .container-text {
+    margin-left: 3vh;
+  }
+  .menu-contenedor {
+    margin-top: 8% !important;
+  }
+  .logo-contenedor {
+    margin-left: 20% !important;
+    margin-top: 10% !important;
+  }
+  .logo-contenedor img {
+    width: auto !important;
   }
 }
 
