@@ -679,7 +679,7 @@ input {
   }
 }
 
-@media (max-height: 823px) {
+@media (max-height: 700px) {
   .menu ul li {
     margin: auto;
   }
@@ -853,9 +853,7 @@ input {
   .bloque-tarjeta {
     width: 90%;
   }
-  .menu-contenedor {
-    margin-top: 15%;
-  }
+  
   .Contacto {
     display: block;
   }
@@ -948,7 +946,6 @@ input {
 @media only screen and (min-device-width: 600px) and (max-device-height: 960px) {
   .menu-contenedor {
     width: 100%;
-    margin-top: 15%;
   }
   .contenedor-texto {
     width: 80%;
@@ -1029,7 +1026,7 @@ input {
   }
 }
 
-@media only screen and (min-device-width: 412px) and (max-device-height: 846px) {
+@media only screen and (min-device-width: 412px) and (max-device-height: 700px) {
   .menu ul {
     display: inherit;
   }
@@ -1048,7 +1045,9 @@ input {
   .Contacto {
     height: 50vh;
   }
-}
+  .menu-contenedor {
+    margin-top: 0!important;
+  }
 
 @media (max-width: 1660px) {
   .menu-contenedor {
